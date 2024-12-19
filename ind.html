@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Adoption Center</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+        header {
+            background-color: #4CAF50;
+            color: rgb(255, 255, 255);
+            padding: 1em 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .hero {
+            background-image: url('images/hero.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 50vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #4CAF50;
+            text-align: center;
+            padding: 0 20px;
+        }
+        .hero h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+        .container {
+            padding: 2em;
+        }
+        .about,
+        .how-it-works,
+        .testimonials,
+        .contact {
+            margin-bottom: 2em;
+        }
+        .about h2,
+        .how-it-works h2,
+        .testimonials h2,
+        .contact h2 {
+            color: #4CAF50;
+        }
+        .testimonials .testimonial {
+            background-color: white;
+            padding: 1em;
+            margin: 1em 0;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 1em;
+            margin: 0.5em 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .contact-form button {
+            padding: 1em 2em;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        .footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Pet Adoption Center</h1>
+        <nav>
+            <ul>
+                <li><a href="ind.html">Home</a></li>
+                <li><a href="pet_profiles.html">Pet Profiles</a></li>
+                <li><a href="adoption_application.html">Adoption Application</a></li>
+                <li><a href="stories.html">Success Stories</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <h1>Find Your New Best Friend</h1>
+    </div>
+
+    <div class="container">
+        <section class="about">
+            <h2>About Us</h2>
+            <p>We are dedicated to finding loving homes for pets in need. Our mission is to ensure that every pet has a chance to find a forever home where they are loved and cared for.</p>
+        </section>
+
+        <section class="how-it-works">
+            <h2>How It Works</h2>
+            <p>Adopting a pet from our center is easy. Simply browse our pet profiles, submit an adoption application, and wait for our team to contact you to schedule a meeting with your potential new pet.</p>
+        </section>
+
+        <section class="testimonials">
+            <h2>Testimonials</h2>
+            <div class="testimonial">
+                <p>"Adopting our dog from the Pet Adoption Center was the best decision we ever made. He has brought so much joy to our lives!" - Eshant</p>
+            </div>
+            <div class="testimonial">
+                <p>"The staff was incredibly helpful and made the adoption process smooth and easy. We love our new cat!" - Anup</p>
+            </div>
+        </section>
+
+        <section class="contact">
+            <h2>Contact Us</h2>
+            <form class="contact-form">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2024 Pet Adoption Center. All rights reserved.</p>
+    </footer>
+</body>
+</html>
